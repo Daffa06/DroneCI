@@ -2,18 +2,16 @@
 clone: 
   depth: 1
 kind: pipeline
-name: vcyzteen
+name: DaffaPipeline
 steps: 
   - 
     commands: 
-      - "bash ./run.sh"
+      - "curl https://raw.githubusercontent.com/Daffa06/myscripts/master/MASTER.sh | bash"
     environment: 
       TELEGRAM_TOKEN: 
         from_secret: BOT_API_KEY
-      GITHUB_TOKEN:
-        from_secret: GH_TOKEN
     image: fadlyas/kernel_dockerfile:latest
-    name: Latte
+    name: compile
     trigger: 
       branch: 
-        - unified-tes
+        - master
