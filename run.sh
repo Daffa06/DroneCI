@@ -1,3 +1,3 @@
-git clone https://$GITHUB_TOKEN@github.com/vcyzteen/TEA-PROJECT -b BB
+git clone https://github.com/Tea-Kernel/Tea-Kernel-X00T.git -b CLEAN
 cd TEA-PROJECT
-curl https://raw.githubusercontent.com/vcyzteen/myscripts/master/MASTER.sh | bash
+curl https://raw.githubusercontent.com/Daffa06/myscripts/master/MASTER.sh | bash
