@@ -5,11 +5,13 @@ kind: pipeline
 name: DaffaPipeline
 steps: 
   - 
-    commands: 
-      - "curl https://raw.githubusercontent.com/Daffa06/myscripts/master/MASTER.sh | bash"
+    commands:
+      - "bash ./run.sh" 
     environment: 
       TELEGRAM_TOKEN: 
         from_secret: BOT_API_KEY
+      GITHUB_TOKEN:
+        from_secret: GH_TOKEN
     image: fadlyas/kernel_dockerfile:latest
     name: compile
     trigger: 
